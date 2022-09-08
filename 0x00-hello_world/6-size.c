@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *  Program entry point - main
+ *  main - Enty point
  *
- *  Return prints an integer of zero(successfully run program)
+ *  Return: Always 0 (Success)
  */
 
 int main(void)
