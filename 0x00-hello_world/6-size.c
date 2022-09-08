@@ -1,6 +1,7 @@
 #include <stdio.h>
+
 /**
- *  Program entry point is main
+ *  Program entry point - main
  *
  *  Return prints an integer of zero(successfully run program)
  */
