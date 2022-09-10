@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * main - main block
- * Description: Get a random number and check its last digit, compare it with 5
+ * Description: Get a number and check its last digit, compare with 5
  * Return: 0
  */
 int main(void)
@@ -13,13 +13,15 @@ int last;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
+
 last = n % 10;
+printf("Last digit of %d is %d ", n, last);
 
 if (last > 5)
-	printf("Last digit  %i is %i and is > 5\n", n, last);
+	printf("and is > 5\n");
 else if (last == 0)
-	printf("Last digit  %i is %i and is 0\n", n, last);
-else if (last < 6)
-	printf("Last digit  %i is %i and is < 6 and !0 \n", n, last);
+	printf("and is 0\n");
+else if (last < 6 && last != 0)
+	printf("and is < 6 and !0 \n");
 return (0);
 }
