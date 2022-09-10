@@ -1,12 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes here */
-
 /**
  * main - Entry point
  * Description - Prints if random generated number is positive,zero,negative
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int main(void)
 
@@ -20,4 +18,6 @@ int main(void)
                 printf("%d is zero\n", n);
         else
                 printf("%d is positive\n", n);
+
         return (0);
+}
