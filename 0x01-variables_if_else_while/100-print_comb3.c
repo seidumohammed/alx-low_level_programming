@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Entry point to the program
  *
- * Return: Always 0 (Success/correct)
+ * Return:  - Code runs successfully)
  */
 
 int main(void)
@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (k = 48; k < 58; k++)
 		{
-			if (i != j && i < j)
+			if (i != k && i < k)
 			{
 				putchar(i);
 				putchar(k);
