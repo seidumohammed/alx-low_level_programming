@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * main - print putchar
  * Return: 0 for success
