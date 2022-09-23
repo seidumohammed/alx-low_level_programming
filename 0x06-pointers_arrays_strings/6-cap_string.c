@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * cap_string - capitalizes words 
+ * cap_string - capitalizes words
  * @s: input string.
  * Return: the pointer to dest.
  */
