@@ -3,27 +3,21 @@
  * _strpbrk - matches any character specified
  * @s: string to be scanned.
  * @accept:character in str1 that matches one of the characters in str2
- * Return: string s that matches any character specified in accept
+ * Return: 0 for success
  **/
+
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int i, n;
 
-	while (*s != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		i = 0;
-		while (accept[j] != '\0')
+		for (n = 0; accept[n] != '\0'; n++)
 		{
-			if (*s == accept[i])
-			{
-				return (s);
-			}
-
-			i++;
+			if (s[i] == accept[n])
+				return (s + i);
 		}
-
-		s++;
 	}
-	return (0);
 
+	return (0);
 }
