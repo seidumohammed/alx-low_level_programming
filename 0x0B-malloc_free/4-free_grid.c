@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * free_grid - allocates a grid, make space and free space
