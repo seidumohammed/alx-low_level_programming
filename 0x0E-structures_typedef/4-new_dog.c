@@ -2,15 +2,13 @@
 #include "dog.h"
 /**
  *new_dog - new dog
- *name:  new dog's name
- *owner: dog's owner
- *age: dog's age
+ *@name:  new dog's name
+ *@owner: dog's owner
+ *@age: dog's age
  *Return: 0
- * /
-
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-
 	int i = 0, j = 0, k;
 	dog_t *cute_dog;
 
