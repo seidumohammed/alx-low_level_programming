@@ -2,19 +2,17 @@ CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-CFLAGS = -Wall -Werror -Wextra -pedantic
+RM = rm -f
 
-.PHONY: all clean oclean fclean re
-
-all: m.h $(OBJ)
+all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-clean:
+clean :
 	$(RM) *~ $(NAME)
 
-oclean:
+oclean :
 	$(RM) $(OBJ)
 
-fclean: clean oclean
+fclean : clean oclean
 
-re: fclean all
+re : oclean all
